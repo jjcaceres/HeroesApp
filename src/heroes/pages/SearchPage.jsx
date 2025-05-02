@@ -11,6 +11,7 @@ export const SearchPage = () => {
   const { q = '' } = queryString.parse(location.search);
 
   const heroes = getHeroesByName(q);
+  
 
   const showSearch = (q.length === 0);
   const showError = (q.length > 0) && (heroes.length === 0);
