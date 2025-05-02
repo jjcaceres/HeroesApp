@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+
 
 const CharactersByHero = ({ alter_ego, characters }) => {
     // if ( alter_ego === characters ) return (<></>);
@@ -18,6 +19,8 @@ export const HeroCard = ({
     first_appearance,
     characters }) => {
 
+    //const heroImageUrl = new URL(`../../assets/heroes/${id}.jpg`, import.meta.url).href;
+    //const heroImageUrl = new URL(`/heroes/${id}.jpg`, import.meta.url).href;
     const heroImageUrl = `/heroes/${id}.jpg`;
     //   const characterByHero = (<p>{characters}</p>)
     return (
